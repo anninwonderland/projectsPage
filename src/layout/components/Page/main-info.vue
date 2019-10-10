@@ -55,9 +55,9 @@
     margin-bottom: 12px;
   }
 
-  .project-id {
+  span.project-id {
     margin-right: 12px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: #797878;
   }
@@ -77,7 +77,6 @@
   }
 
   h3 {
-     margin: 0px 0px 60px 0px;
      font-size: 20px;
      font-weight: bold;
      word-wrap: normal;
@@ -101,5 +100,8 @@
     color: #000000;
   }
 
+  body {
+    margin-bottom: 60px;
+  }
 
 </style>

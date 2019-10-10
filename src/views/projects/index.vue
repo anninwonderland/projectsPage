@@ -5,7 +5,10 @@
       <el-container>
         <el-main>
           <main-info></main-info>
+          <student-card></student-card>
           <info></info>
+          <heads></heads>
+          <students></students>
         </el-main>
       </el-container>
     </el-container>
@@ -15,9 +18,13 @@
 
 <script>
 import mainInfo from '../../layout/components/Page/main-info.vue'
+import studentCard from '../../layout/components/Page/student-card.vue'
 import info from '../../layout/components/Page/info.vue'
+import heads from '../../layout/components/Page/heads.vue'
+import students from "../../layout/components/Page/students";
+
 export default {
-    components: {mainInfo, info},
+    components: {mainInfo, info, studentCard, heads, students},
   data() {
     return {
     }
@@ -32,12 +39,10 @@ export default {
 .el-aside {
   background-color: #D3DCE6;
   color: #333;
-  text-align: center;
   line-height: normal;
 }
 .el-main {
   color: #333;
-  text-align: center;
   line-height: normal;
   margin: 40px 40px 0px 40px;
 
