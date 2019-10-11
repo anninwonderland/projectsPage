@@ -1,6 +1,6 @@
 <template>
   <el-row>
-    <el-col :span="20">
+    <el-col :span="24">
       <el-row class="info">
           <span class="project-id">{{ id }}</span>
           <el-tag color="#C6F0EE">
@@ -12,13 +12,15 @@
         <h3>{{ nameEng }}</h3>
       </el-row>
     </el-col>
-    <el-col :span="4" justify="end">
-      <a class="icon-link" href="https://trello.com/">
-        <img src="../../../icons/svg/tree.svg" alt="Trello">
+    <el-col :span="2">
+      <div class="links">
+      <a class="icon-link" href="https://trello.com/" target="_blank">
+        <img src="../../../assets/404_images/trello.svg" alt="Trello">
       </a>
-      <a class="icon-link" href="https://git.miem.hse.ru/">
-        <img src="../../../icons/svg/git.svg" alt="Git">
+      <a class="icon-link" href="https://git.miem.hse.ru/" target="_blank">
+        <img src="../../../assets/404_images/git.svg" alt="Git" >
       </a>
+        </div>
     </el-col>
   </el-row>
 </template>
@@ -66,6 +68,10 @@
     display: inline-block;
   }
 
+  div.links {
+    float: right;
+  }
+
   h1 {
     margin-top: 20px;
     margin-bottom: 12px;
@@ -102,6 +108,11 @@
 
   body {
     margin-bottom: 60px;
+  }
+
+  img {
+    width: 42px;
+    height: 42px;
   }
 
 </style>
