@@ -1,5 +1,6 @@
 <template>
   <el-col :span="4">
+    <div>
     <h5>Навигация</h5>
     <el-menu>
       <el-menu-item index="1">
@@ -16,9 +17,7 @@
       </el-submenu>
 
       <el-menu-item index="3">
-        <el-badge type="success" value="!" class="item">
         <span>Моя статистика</span>
-        </el-badge>
       </el-menu-item>
 
       <el-submenu index="4">
@@ -30,6 +29,7 @@
       </el-submenu>
 
     </el-menu>
+    </div>
   </el-col>
 </template>
 

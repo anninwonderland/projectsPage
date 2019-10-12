@@ -1,6 +1,6 @@
 <template>
   <el-row>
-    <el-col :span="24">
+    <el-col :span="22">
       <el-row class="info">
           <span class="project-id">{{ id }}</span>
           <el-tag color="#C6F0EE">

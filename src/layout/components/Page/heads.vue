@@ -1,4 +1,6 @@
 <template>
+  <el-row>
+  <el-col span="24">
   <el-table
     :data="headsData"
     border
@@ -26,6 +28,8 @@
       label="Телефон">
     </el-table-column>
   </el-table>
+  </el-col>
+    </el-row>
 </template>
 
 <script>

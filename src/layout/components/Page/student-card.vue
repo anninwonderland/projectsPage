@@ -1,5 +1,5 @@
 <template>
-  <el-row :span="24">
+  <el-col :span="20">
   <el-card class="box-card">
     <div slot="header" class="clearfix">
       <span>Статистика</span>
@@ -9,7 +9,7 @@
       <el-col> {{ item.value }}</el-col>
     </div>
   </el-card>
-  </el-row>
+  </el-col>
 </template>
 
 <script>
