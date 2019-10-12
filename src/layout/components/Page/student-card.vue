@@ -1,12 +1,21 @@
 <template>
-  <el-col :span="20">
+  <el-col :span="18">
   <el-card class="box-card">
     <div slot="header" class="clearfix">
       <span>Статистика</span>
     </div>
-    <div v-for="item in items"  class="text item">
-      <el-col> {{ item.key }}</el-col>
-      <el-col> {{ item.value }}</el-col>
+    <div>
+      <el-row gutter="20">
+        <el-col :span="10">
+            <el-row v-for="item in items" style="line-height: 1.5">
+              <el-col :span="20"> {{ item.key }}</el-col>
+              <el-col :span="4" style="text-align: right"> {{ item.value }}</el-col>
+            </el-row>
+        </el-col>
+        <el-col :span="14">
+          <p>graph</p>
+        </el-col>
+      </el-row>
     </div>
   </el-card>
   </el-col>
@@ -31,5 +40,13 @@
 <style scoped>
   body {
     margin-bottom: 60px;
+  }
+
+  .el-col {
+    height: 100% ;
+  }
+
+  .el-card {
+    height: 100% !important;
   }
 </style>

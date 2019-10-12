@@ -1,5 +1,5 @@
 <template>
-  <el-row>
+  <el-row class="row-margin-bottom">
     <el-col :span="22">
       <el-row class="info">
           <span class="project-id">{{ id }}</span>
@@ -93,7 +93,7 @@
 
   span.project-id {
     margin: 0px 12px 0px 0px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: normal;
     text-align: left;
     line-height: normal;

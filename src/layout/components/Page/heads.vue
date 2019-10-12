@@ -1,6 +1,7 @@
 <template>
-  <el-row>
+  <el-row class="row-margin-bottom">
   <el-col span="24">
+    <h5>Руководители</h5>
   <el-table
     :data="headsData"
     border
@@ -8,12 +9,12 @@
     <el-table-column
       prop="role"
       label="Должность"
-      width="180">
+      >
     </el-table-column>
     <el-table-column
       prop="name"
       label="ФИО"
-      width="180">
+      >
     </el-table-column>
     <el-table-column
       prop="link"

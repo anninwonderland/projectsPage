@@ -1,28 +1,28 @@
 <template>
   <div class="app-container">
     <el-container>
-      <el-row class="main">
+      <el-row class="main-row row-margin-bottom"
+              gutter="10">
         <el-col span="4">
-          <el-aside width="200px">
+          <el-aside>
             <sidebar></sidebar>
           </el-aside>
         </el-col>
         <el-col span="20" offset="4">
-
           <el-main>
-
-              <main-info></main-info>
+              <main-info id="main-info"></main-info>
               <info></info>
 
-            <el-row>
-              <vacancies></vacancies>
-              <student-card></student-card>
+            <el-row class="row-margin-bottom cards-in-row"
+                    gutter="20">
+              <vacancies id="vacancies"></vacancies>
+              <student-card id="student-card"></student-card>
             </el-row>
 
-              <heads></heads>
+              <heads id="heads"></heads>
 
 
-              <students></students>
+              <students id="students"></students>
 
           </el-main>
 
@@ -56,15 +56,26 @@
   .el-aside {
     background-color: #D3DCE6;
     height: 100%;
-    position: fixed;
   }
 
   .el-main {
   }
 
-  .main {
+  .row-margin-bottom {
+    margin-bottom: 20px;
+  }
+
+  .row-margin-bottom:last-child {
+     margin-bottom: 0;
+  }
+
+  .cards-in-row .el-col {
+    height: 100%;
+  }
+  .main-row {
     width: 100%;
   }
+
 
 </style>
 

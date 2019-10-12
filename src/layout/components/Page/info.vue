@@ -1,9 +1,12 @@
 <template>
-  <el-row>
+  <el-row class="row-margin-bottom">
     <el-col :span="24">
-      <el-collapse v-for="item in items">
-        <el-collapse-item v-bind:title="item.key">
-          <div class="desc">{{item.description}}</div>
+      <el-collapse>
+        <el-collapse-item :id=index v-for="(item,index) in items"
+                          v-bind:title="item.key">
+          <div class="desc">
+            {{item.description}}
+          </div>
         </el-collapse-item>
       </el-collapse>
     </el-col>
