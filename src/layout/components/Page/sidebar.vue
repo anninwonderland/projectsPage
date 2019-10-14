@@ -84,10 +84,6 @@
     word-wrap: normal;
   }
 
-  .el-submenu span{
-    padding-left: 20px;
-  }
-
   .el-menu-item a {
     display: block;
   }

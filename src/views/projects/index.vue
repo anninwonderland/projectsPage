@@ -8,24 +8,18 @@
             <sidebar></sidebar>
           </el-aside>
         </el-col>
-        <el-col span="20" offset="4">
+        <el-col span="19" offset="5">
           <el-main>
-              <main-info id="main-info"></main-info>
-              <info></info>
-
+            <main-info id="main-info"></main-info>
             <el-row class="row-margin-bottom cards-in-row"
                     gutter="20">
               <vacancies id="vacancies"></vacancies>
               <student-card id="student-card"></student-card>
             </el-row>
-
-              <heads id="heads"></heads>
-
-
-              <students id="students"></students>
-
+            <info></info>
+            <heads id="heads"></heads>
+            <students id="students"></students>
           </el-main>
-
         </el-col>
       </el-row>
     </el-container>
@@ -56,9 +50,7 @@
   .el-aside {
     background-color: #D3DCE6;
     height: 100%;
-  }
-
-  .el-main {
+    width: 100%;
   }
 
   .row-margin-bottom {
@@ -66,12 +58,13 @@
   }
 
   .row-margin-bottom:last-child {
-     margin-bottom: 0;
+    margin-bottom: 0;
   }
 
   .cards-in-row .el-col {
     height: 100%;
   }
+
   .main-row {
     width: 100%;
   }

@@ -1,6 +1,7 @@
 <template>
   <el-row class="row-margin-bottom">
     <el-col :span="24">
+      <h4>Детали проекта</h4>
       <el-collapse>
         <el-collapse-item :id=index v-for="(item,index) in items"
                           v-bind:title="item.key">
